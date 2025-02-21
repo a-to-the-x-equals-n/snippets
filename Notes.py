@@ -37,7 +37,7 @@ class Notes:
             cls._instance._load()  # Load notes when initializing
         return cls._instance
 
-    def add_note(self, func_name: str, note: str) -> None:
+    def add(self, func_name: str, note: str) -> None:
         """
             Adds a note for a given function.
 
@@ -50,7 +50,7 @@ class Notes:
         """
         self._notes[func_name] = note
 
-    def append_note(self, func_name: str, note: str) -> None:
+    def append(self, func_name: str, note: str) -> None:
         """
         Appends additional information to an existing function note.
         
@@ -68,7 +68,7 @@ class Notes:
         else:
             self._notes[func_name] = note  # If no note exists, create one
 
-    def replace_note(self, func_name: str, note: str) -> None:
+    def update(self, func_name: str, note: str) -> None:
         """
         Replaces an existing function note with a new one.
 
