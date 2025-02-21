@@ -63,3 +63,5 @@ package-lock.json
 *.swn
 *.tmp
 *.log
+
+hidden/
