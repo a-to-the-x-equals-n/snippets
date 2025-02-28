@@ -23,6 +23,8 @@ venv/
 Pipfile
 Pipfile.lock
 poetry.lock
+.pytest_cache/
+*test.py
 
 # ---------------------
 # Jupyter Notebooks
